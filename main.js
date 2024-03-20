@@ -17,8 +17,7 @@ function getComputerChoice() {
     }
     return choice;
 }
-let playerSelection = prompt("Enter Your CHoice");
-let computerSlection = getComputerChoice();
+
 function playRound(playerSelection,computerSlection){
   let outcome='';
    if(playerSelection==='ROCK')
@@ -74,4 +73,16 @@ function playRound(playerSelection,computerSlection){
    console.log(`COMPUTER CHOICE : ${computerSlection}`);
     console.log(outcome);
 }
-playRound(playerSelection,computerSlection);
+function playGame()
+{
+  let i=0;
+  for(i===0;i<5;i++)
+  {
+    let playerSelection = prompt("Enter Your CHoice");
+    let computerSlection = getComputerChoice();
+    console.log('\n');
+    console.log(`Round - ${i+1}`);
+    playRound(playerSelection,computerSlection);
+  }
+}
+playGame();
