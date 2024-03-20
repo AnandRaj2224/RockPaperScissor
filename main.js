@@ -17,7 +17,8 @@ function getComputerChoice() {
     }
     return choice;
 }
-
+let playerSelection = prompt("Enter Your CHoice");
+let computerSlection = getComputerChoice();
 function playRound(playerSelection,computerSlection){
   let outcome='';
    if(playerSelection==='ROCK')
@@ -69,5 +70,8 @@ function playRound(playerSelection,computerSlection){
    {
     outcome ='invalid choice';
    }
-    return outcome;
+   console.log( `YOUR CHOICE : ${playerSelection}`);
+   console.log(`COMPUTER CHOICE : ${computerSlection}`);
+    console.log(outcome);
 }
+playRound(playerSelection,computerSlection);
