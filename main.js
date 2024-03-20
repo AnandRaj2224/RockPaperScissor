@@ -17,3 +17,57 @@ function getComputerChoice() {
     }
     return choice;
 }
+
+function playRound(playerSelection,computerSlection){
+  let outcome='';
+   if(playerSelection==='ROCK')
+   {
+    if(computerSlection==='SCISSORS')
+    {
+      outcome='U WIN!';
+    }
+    else if(computerSlection==='PAPER')
+    {
+      outcome='U LOSE';
+    }
+    else{
+      outcome='ITS A DRAW';
+    }
+   }
+
+   else if(playerSelection==='SCISSORS')
+   {
+    if(computerSlection==='SCISSORS')
+    {
+      outcome='ITS A DRAW';
+    }
+    else if(computerSlection==='PAPER')
+    {
+      outcome='U WIN!';
+    }
+    else{
+      outcome='U LOSE';
+    }
+   }
+
+   else if(playerSelection==='PAPER')
+   {
+    if(computerSlection==='SCISSORS')
+    {
+      outcome='U LOSE';
+    }
+    else if(computerSlection==='PAPER')
+    {
+      outcome='ITS A DRAW';
+    }
+    else{
+      outcome='U WIN!';
+    }
+   }
+
+   else
+   {
+    outcome ='invalid choice';
+   }
+    return outcome;
+}
