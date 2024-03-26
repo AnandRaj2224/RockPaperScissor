@@ -1,5 +1,5 @@
 // function to get a move from computer.
-/* function getComputerChoice() {
+ function getComputerChoice() {
     let move = Math.random();   // returns a value from <= 0 and >1.
     let choice ='';             // created a variable to store computer choice.
     // divided value of move in 3 parts and assigined name to each part.
@@ -17,7 +17,6 @@
     }
     return choice;
 }
-
 function playRound(playerSelection,computerSlection){
   let outcome='';
    if(playerSelection==='ROCK')
@@ -73,16 +72,25 @@ function playRound(playerSelection,computerSlection){
    console.log(`COMPUTER CHOICE : ${computerSlection}`);
     console.log(outcome);
 }
-/*function playGame()
-{
- /* let i=0;
-  for(i===0;i<5;i++)
-  {
-    let playerSelection = prompt("Enter Your CHoice");
-    let computerSlection = getComputerChoice();
-    console.log('\n');
-    console.log(`Round - ${i+1}`);
-    playRound(playerSelection,computerSlection);
-  } 
+// when rock is clicked.
+const rock = document.querySelector(".rock");
+rock.addEventListener("click",handleRockClick);
+//when paper is clicked.
+const paper = document.querySelector(".paper");
+paper.addEventListener("click",handlePaperClick);
+//when scissor is clicked.
+const scissors = document.querySelector(".scissors");
+scissors.addEventListener("click",handleScissorsClick);
+
+// Define separate event handler functions for each button
+function handleRockClick() {
+  playRound("ROCK", getComputerChoice());
 }
-playGame();*/
+
+function handlePaperClick() {
+  playRound("PAPER", getComputerChoice());
+}
+
+function handleScissorsClick() {
+  playRound("SCISSORS", getComputerChoice());
+}
