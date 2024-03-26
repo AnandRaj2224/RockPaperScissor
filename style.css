@@ -1,13 +1,12 @@
 .container{
     background-color: #80C4B7;
-    border: 2px solid black;
+    border: 12px solid #E3856B;
     height: 650px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
 }
 .name{
-  border: 2px solid black;
   margin: 5px;
   display: flex;
   justify-content: center;
@@ -18,7 +17,6 @@
   font-weight: bolder;
 }
 .buttonBox{
-    border: 2px solid black;
     margin: 5px;
     height: 325px;
     display: flex;
@@ -45,7 +43,16 @@
   cursor: pointer;
 }
 .scoreArea{
-  border: 2px solid black;
   margin: 5px;
+  padding: 0px;
   height: 225px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-transform: uppercase;
+  color: #E3856B;
+  font-family: Roboto;
+  font-size: 26px;
+  font-weight: bold;
 }
