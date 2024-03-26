@@ -75,7 +75,7 @@ function playRound(playerSelection,computerSlection){
 }
 function playGame()
 {
-  let i=0;
+ /* let i=0;
   for(i===0;i<5;i++)
   {
     let playerSelection = prompt("Enter Your CHoice");
@@ -83,6 +83,6 @@ function playGame()
     console.log('\n');
     console.log(`Round - ${i+1}`);
     playRound(playerSelection,computerSlection);
-  }
+  } */
 }
 playGame();
