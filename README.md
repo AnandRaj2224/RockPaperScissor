@@ -20,4 +20,4 @@ To play the game, simply open the index.html file in your web browser. You will 
 
 The game consists of a total of five rounds. After all rounds have been played, the final winner will be determined based on the total score accumulated by the user and the computer.
 
-Enjoy playing and have fun!
+Enjoy playing and have fun!.
