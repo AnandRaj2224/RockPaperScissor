@@ -1,5 +1,5 @@
 // function to get a move from computer.
-function getComputerChoice() {
+/* function getComputerChoice() {
     let move = Math.random();   // returns a value from <= 0 and >1.
     let choice ='';             // created a variable to store computer choice.
     // divided value of move in 3 parts and assigined name to each part.
@@ -73,7 +73,7 @@ function playRound(playerSelection,computerSlection){
    console.log(`COMPUTER CHOICE : ${computerSlection}`);
     console.log(outcome);
 }
-function playGame()
+/*function playGame()
 {
  /* let i=0;
   for(i===0;i<5;i++)
@@ -83,6 +83,7 @@ function playGame()
     console.log('\n');
     console.log(`Round - ${i+1}`);
     playRound(playerSelection,computerSlection);
-  } */
+  } 
 }
-playGame();
+playGame();*/
+
